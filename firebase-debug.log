@@ -1,0 +1,43 @@
+[debug] [2020-03-04T09:15:04.043Z] ----------------------------------------------------------------------
+[debug] [2020-03-04T09:15:04.058Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\abdelrahman\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-03-04T09:15:04.059Z] CLI Version:   7.14.0
+[debug] [2020-03-04T09:15:04.059Z] Platform:      win32
+[debug] [2020-03-04T09:15:04.060Z] Node Version:  v10.16.1
+[debug] [2020-03-04T09:15:04.064Z] Time:          Wed Mar 04 2020 11:15:04 GMT+0200 (Eastern European Standard Time)
+[debug] [2020-03-04T09:15:04.064Z] ----------------------------------------------------------------------
+[debug] [2020-03-04T09:15:04.064Z] 
+[debug] [2020-03-04T09:15:04.153Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-04T09:15:04.156Z] > authorizing via signed-in user
+[debug] [2020-03-04T09:15:04.157Z] [iam] checking project codenotification-ed3ab for permissions ["firebase.projects.get"]
+[debug] [2020-03-04T09:15:04.167Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-03-04T09:15:04.168Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-03-04T09:15:05.175Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-04T09:15:05.263Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/codenotification-ed3ab:testIamPermissions  
+
+[debug] [2020-03-04T09:15:06.523Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-04T09:15:06.529Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/codenotification-ed3ab  
+ 
+[debug] [2020-03-04T09:15:07.272Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\abdelrahman\Desktop\simply-notify-start'...
+[info] 
+[debug] [2020-03-04T09:15:07.300Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/codenotification-ed3ab/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "10"
+[info] +  functions: functions emulator started at http://localhost:5001
+[debug] [2020-03-04T09:15:08.494Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "C:\Users\abdelrahman\Desktop\simply-notify-start\functions" for Cloud Functions...
+[debug] [2020-03-04T09:15:08.729Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-03-04T09:15:08.729Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-03-04T09:15:08.729Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-03-04T09:15:08.730Z] [worker-~diagnostic~-4e7bfa46-4619-45b1-a340-61a0a29162e3]: Assigning socketPath: \\?\pipe\C:\Users\abdelrahman\Desktop\simply-notify-start\functions\5348
+[debug] [2020-03-04T09:15:08.731Z] [worker-~diagnostic~-4e7bfa46-4619-45b1-a340-61a0a29162e3]: BUSY
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2020-03-04T09:15:09.938Z] [runtime-status] [5348] Functions runtime initialized. {"cwd":"C:\\Users\\abdelrahman\\Desktop\\simply-notify-start\\functions","node_version":"10.16.1"}
+[debug] [2020-03-04T09:15:09.943Z] [runtime-status] [5348] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-03-04T09:15:09.960Z] [runtime-status] [5348] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"C:\\Users\\abdelrahman\\Desktop\\simply-notify-start\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2020-03-04T09:15:09.968Z] [runtime-status] [5348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\abdelrahman\\Desktop\\simply-notify-start\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2020-03-04T09:15:09.972Z] [runtime-status] [5348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"C:\\Users\\abdelrahman\\Desktop\\simply-notify-start\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[info] i  functions[sendNotifications]: function ignored because the database emulator does not exist or is not running.
+[debug] [2020-03-04T09:15:11.110Z] [worker-~diagnostic~-4e7bfa46-4619-45b1-a340-61a0a29162e3]: IDLE
